@@ -13,7 +13,7 @@ let age= 21
 let isLoggedIn= false
 
 //number=> 2 to power 53
-// bigint=>large number
+// big int=>large number
 //string=>""
 //boolean=>true/false
 // null => stadalone value  (null ek object hei (type))
