@@ -55,3 +55,33 @@ const user = [
  console.log(Object.entries(tinderUser));
  
 console.log(tinderUser.hasOwnProperty('email'));//hasOwnProperty used to find whether the property is present or not
+
+
+const course ={
+    coursename : "js ",
+    price : "999",
+    courseInstructor : "Hitesh"
+}
+
+course.courseInstructor
+
+const {courseInstructor : instructor}= course // aise krne se baar baar course.courseInstructor nhi krna padega code clean dikhega
+
+//console.log(courseInstructor);
+console.log(instructor);
+
+//JSON=>API's
+// {
+//     "coursename" : "js ",
+//     "price" : "999",
+//     "courseInstructor" : "Hitesh"
+// }
+
+//sometimes api's array ke form m bhi milti hei
+[
+    {},
+    {},
+    {}
+]
+
+
