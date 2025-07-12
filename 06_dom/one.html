@@ -1,14 +1,97 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
-    <meta charset="UTF-8">
-   
-    <title>DOM learning</title>
- </head>
- <body>
-    <div class="bg-black">
-        <h1 class="heading">dom learning on chai aur code</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta corrupti animi, dolores nihil consectetur voluptates aperiam ullam laudantium architecto eum quibusdam blanditiis corporis quidem. Quis at laudantium sequi nostrum voluptatem.</p>
-    </div>
- </body>
- </html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+
+   <title>DOM learning</title>
+   <style>
+      .bg-black {
+         background-color: black;
+         color: #fff;
+      }
+   </style>
+</head>
+
+<body class="bg-black">
+   <div>
+      <h1 id="title" class="heading">DOM learning on chai aur code
+         <span style="display:none">test text </span>
+      </h1>
+      <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+      <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+      <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta corrupti animi, dolores nihil consectetur
+         voluptates aperiam ullam laudantium architecto eum quibusdam blanditiis corporis quidem. Quis at laudantium
+         sequi nostrum voluptatem.</p>
+      <input type="password">
+
+      <ul>
+         <li>one</li>
+         <li>two</li>
+         <li>three</li>
+      </ul>
+   </div>
+</body>
+
+</html>
+
+<!-- //DOM -> Document Object Model -->
+<!-- */
+console.log(window)
+console.log(document)
+console.log(document.baseURI)
+console.log(document.links[2])
+document.getElementById(' ')
+document.getElementById(' ').innerHTML="<h1>chai aur code</h1>" // hum h1 ko change kr rahe h
+document.getElementById(' ').textHTML
+console.log(document.links)->sare links
+console.dir(document)
+document.getElementById('title')
+document.getElementById('title').id
+document.getElementById('title').class ->wrong
+document.getElementById('title').className
+document.getElementById('title').getAttribute('id')
+document.getElementById('title').getAttribute('class')
+document.getElementById('title').setAttribute('class','test')
+document.getElementById('title').setAttribute('class','test heading')
+const title=document.getElementById('title')
+const title=document.getElementById('title')
+title.style.backgroundColor='green'
+title.style.padding='15px'
+title.style.borderRadius="5px"
+title.textContent  ->isse sara ka sara content milta h jo style property is hata diya h wo bhi('DOM learning on chai aur code\n         test text \n )
+title.innerText -> iss hata wala content nhi milta('DOM learning on chai aur code')
+title.innerHTML-> jo html likh h wo bhi mileage ('DOM learning on chai aur code\n         <span style="display:none">test text </span>\n )
+document.querySelector('h2') -> select 1st h2 heading
+document.querySelector('#title')
+document.querySelector('.heading')
+document.querySelector('#title')
+document.querySelector('input[type="password"]')
+document.querySelector('ul')
+const myul =document.querySelector('ul')
+myul.querySelector('li')
+const turngreen=myul.querySelector('li')
+turngreen.style.backgroundColor="green"
+document.querySelectorAll('li')
+const tempLiList = document.querySelectorAll('li')
+tempLiList -(NodeList(3) [li, li, li]) nodelist is not pure array /check prototype map not available this mean not array
+tempLiList[0].style.color='green'
+
+diagram-> DOM
+
+window
+|
+document
+|
+html
+| |
+head body
+| | |
+title meta div ->attribute
+| | | |
+text attribute h1->attri. p
+node | |
+text node text node
+
+/* -->
